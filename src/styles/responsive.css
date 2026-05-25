@@ -1,0 +1,34 @@
+/* Global responsive adjustments */
+
+@media (max-width: 1200px) {
+  .container { padding: 0 32px; }
+}
+
+@media (max-width: 900px) {
+  section { padding: 72px 0; }
+
+  .section-title { font-size: 2rem; }
+
+  .home-content { padding-top: 40px; }
+}
+
+@media (max-width: 600px) {
+  section { padding: 56px 0; }
+
+  .container { padding: 0 18px; }
+
+  .section-title { font-size: 1.7rem; }
+
+  .section-subtitle { font-size: 0.95rem; }
+
+  .btn { padding: 12px 22px; font-size: 13px; }
+}
+
+/* Prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
