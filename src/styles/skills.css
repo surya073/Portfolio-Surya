@@ -128,3 +128,50 @@
 @media (max-width: 768px) {
   .skills-grid { grid-template-columns: 1fr; }
 }
+
+/* Tech chips with icons */
+.tech-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: default;
+  transition: all var(--transition);
+}
+
+.tech-chip:hover {
+  border-color: var(--primary);
+  color: var(--text-primary);
+  background: color-mix(in srgb, var(--primary) 6%, var(--bg-card));
+  box-shadow: 0 4px 20px color-mix(in srgb, var(--primary) 15%, transparent);
+}
+
+.tech-chip-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+
+.tech-chip-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.tech-chip:hover .tech-chip-icon {
+  transform: scale(1.2) rotate(-5deg);
+}
+
+.tech-chip-name {
+  line-height: 1;
+}
